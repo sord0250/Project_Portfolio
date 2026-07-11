@@ -15,7 +15,7 @@
 	<body>
 		<header class="site-header">
 			<div class="container nav-bar">
-				<a class="brand" href="../index.html">Spencer Ord</a>
+				<a class="brand" href="../index.html">Spencer Ord | Project and AI Portfolio</a>
 				<nav class="site-nav" aria-label="Primary navigation">
 					<a href="../index.html">Home</a>
 					<a href="jukeboxd.html">Jukeboxd</a>
@@ -29,36 +29,71 @@
 		<main class="project-page">
 			<div class="container">
 				<section class="project-hero">
-					<p class="eyebrow">Project Name</p>
-					<h1>Sway</h1>
+					<p class="eyebrow">Cybersecurity compliance workflow</p>
+					<h1>NCELT</h1>
 					<div class="project-summary">
-						<h3>30-second summary</h3>
-						<p>This is where the video will go.</p>
+						<p class="project-intro">NCELT is a local web app for organizing cybersecurity compliance evidence. It helps teams track files, map them to NIST CSF 2.0 outcomes, assign owners, and monitor review timing so evidence stays ready for audits, internal reviews, and GRC workflows.</p>
 						<div class="video-placeholder">Video placeholder</div>
 					</div>
 				</section>
 
-				<section class="project-grid-detail">
-					<div class="detail-list">
-						<article class="project-panel">
-							<h3>Technologies</h3>
-							<div class="blank-field"></div>
-						</article>
-						<article class="project-panel">
-							<h3>Timeline</h3>
-							<div class="blank-field"></div>
-						</article>
-						<article class="project-panel">
-							<h3>Role</h3>
-							<div class="blank-field"></div>
-						</article>
-					</div>
+				<section class="project-section-grid">
+					<article class="project-panel project-story">
+						<p class="eyebrow">Problem</p>
+						<h3>Why NCELT exists</h3>
+						<p>Evidence collection often gets fragmented across shared drives, email threads, and spreadsheets. NCELT centralizes that work so a team can see what evidence exists, who owns it, how it maps to NIST CSF 2.0, and when it needs review again.</p>
+					</article>
 
-					<aside class="project-panel">
-						<p class="eyebrow">Notes</p>
-						<h3>Use this page as a simple outline.</h3>
-						<p>Fill in the sections above with your project details when you are ready.</p>
-					</aside>
+					<article class="project-panel project-story">
+						<p class="eyebrow">Solution</p>
+						<h3>A practical GRC workflow</h3>
+						<p>The app combines upload, ownership, framework mapping, and review timing into one local experience. That makes it easier to prepare for audits, keep stakeholders aligned, and avoid stale evidence slipping through review cycles.</p>
+					</article>
+
+					<article class="project-panel project-story">
+						<p class="eyebrow">Feature set</p>
+						<h3>What users can do</h3>
+						<ul class="feature-list">
+							<li>Log in through manager-created accounts with session-based authentication</li>
+							<li>Upload evidence, assign an owner, and map one item to multiple NIST outcomes</li>
+							<li>Review the evidence dashboard for ownership, status, and next-review dates</li>
+							<li>Use the framework dashboard to spot missing or expiring evidence by outcome</li>
+						</ul>
+					</article>
+				</section>
+
+				<section class="project-panel project-ai-section">
+					<p class="eyebrow">AI-assisted development</p>
+					<h3>How AI supported the build</h3>
+					<p>I used AI to help shape the product direction and implementation path. I defined the relational data model and the core app criteria myself, including filtering, pages, and login behavior. I then used ChatGPT to think through the best tech stack, and Codex to implement the actual features, API routes, and app logic.</p>
+					<div class="ai-grid">
+						<div>
+							<span>Product design</span>
+							<p>Data relationships, workflow criteria, filtering, page structure, and login requirements were designed before implementation.</p>
+						</div>
+						<div>
+							<span>Stack selection</span>
+							<p>ChatGPT was used to compare options and refine the stack for a local Python web app with authentication and dashboards.</p>
+						</div>
+						<div>
+							<span>Implementation</span>
+							<p>Codex helped build the concrete features, API routes, and app logic that turned the idea into a working product.</p>
+						</div>
+					</div>
+				</section>
+
+				<section class="project-section-grid project-section-grid-alt">
+					<article class="project-panel">
+						<p class="eyebrow">Implementation</p>
+						<h3>Technical foundation</h3>
+						<p>FastAPI handles routes, authentication, upload flows, and dashboards. SQLAlchemy and SQLite manage users, owners, outcomes, evidence records, and support relationships, while Jinja2 renders the interface and Passlib hashes passwords.</p>
+					</article>
+
+					<article class="project-panel">
+						<p class="eyebrow">Lifecycle logic</p>
+						<h3>How review status works</h3>
+						<p>Each record stores a last-reviewed date and lifecycle length. NCELT calculates a next-review date from those fields and marks items green when current, yellow when approaching review, and red when past due or within three days of review.</p>
+					</article>
 				</section>
 			</div>
 		</main>
