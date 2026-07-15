@@ -150,6 +150,44 @@ a {
   color: #f5edd9;
 }
 
+.jukeboxd-page {
+  --bg: #fbfaf4;
+  --surface: #ffffff;
+  --surface-soft: #f6f2e8;
+  --border: #d9d4c8;
+  --text: #2E3A5C;
+  --muted: #A94A34;
+  --navy: #2E3A5C;
+  --navy-2: #3d4b70;
+  --light-blue: #A94A34;
+  --light-blue-soft: #f0d4cc;
+  --shadow: 0 18px 40px rgba(46, 58, 92, 0.1);
+  --shadow-strong: 0 16px 34px rgba(46, 58, 92, 0.18);
+  background: linear-gradient(180deg, #ffffff 0%, #fbfaf4 100%);
+}
+
+.jukeboxd-page .site-header {
+  background: #2E3A5C;
+  border-bottom-color: rgba(251, 250, 244, 0.14);
+}
+
+.jukeboxd-page .brand {
+  color: #fbfaf4;
+}
+
+.jukeboxd-page .site-nav a {
+  color: rgba(251, 250, 244, 0.9);
+}
+
+.jukeboxd-page .site-nav a::after {
+  background: #A94A34;
+}
+
+.jukeboxd-page .site-nav a:hover,
+.jukeboxd-page .site-nav a.active {
+  color: #fbfaf4;
+}
+
 .hero {
   padding: var(--space-5) 0 0;
   background:
