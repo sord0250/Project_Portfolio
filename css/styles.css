@@ -188,6 +188,80 @@ a {
   color: #fbfaf4;
 }
 
+.ncelt-page {
+  color-scheme: light;
+  --bg: #f7f8ff;
+  --surface: #ffffff;
+  --surface-soft: #eef2ff;
+  --border: #d6dcff;
+  --text: #282932;
+  --muted: #555d78;
+  --navy: #282932;
+  --navy-2: #8f96ff;
+  --light-blue: #76a8ff;
+  --light-blue-soft: #dbe6ff;
+  --shadow: 0 18px 40px rgba(40, 41, 50, 0.1);
+  --shadow-strong: 0 18px 42px rgba(118, 168, 255, 0.22);
+  background: linear-gradient(180deg, #ffffff 0%, #f7f8ff 100%);
+}
+
+.ncelt-page .site-header {
+  background: #282932;
+  border-bottom-color: rgba(143, 150, 255, 0.22);
+}
+
+.ncelt-page .brand {
+  color: #ffffff;
+}
+
+.ncelt-page .site-nav a {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.ncelt-page .site-nav a::after {
+  background: linear-gradient(90deg, #8f96ff 0%, #76a8ff 100%);
+}
+
+.ncelt-page .site-nav a:hover,
+.ncelt-page .site-nav a.active {
+  color: #ffffff;
+}
+
+.ncelt-page .project-page {
+  background: linear-gradient(180deg, #ffffff 0%, #f7f8ff 100%);
+}
+
+.ncelt-page .project-summary,
+.ncelt-page .project-panel,
+.ncelt-page .project-dashboard-card,
+.ncelt-page .project-dashboard-decisions,
+.ncelt-page .project-metric,
+.ncelt-page .project-ai-mini-grid div {
+  background: #ffffff;
+  border-color: #d6dcff;
+  box-shadow: var(--shadow);
+}
+
+.ncelt-page .project-ai-mini-grid div {
+  background: linear-gradient(180deg, #ffffff 0%, #f3f6ff 100%);
+}
+
+.ncelt-page .eyebrow,
+.ncelt-page .project-metric span {
+  color: #6f78ff;
+}
+
+.ncelt-page .project-step-number {
+  background: linear-gradient(135deg, #8f96ff 0%, #76a8ff 100%);
+  color: #0f1117;
+  box-shadow: 0 10px 22px rgba(118, 168, 255, 0.22);
+}
+
+.ncelt-page .video-placeholder {
+  background: linear-gradient(180deg, #f3f6ff 0%, #ffffff 100%);
+  border-color: #b9c7ff;
+  color: #282932;
+}
 .hero {
   padding: var(--space-5) 0 0;
   background:
