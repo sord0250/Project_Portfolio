@@ -732,6 +732,78 @@ h3 {
   font-weight: 700;
 }
 
+
+.other-projects-list {
+  display: grid;
+  gap: var(--space-4);
+  margin-top: var(--space-4);
+}
+
+.other-project-card {
+  display: grid;
+  gap: 1rem;
+}
+
+.other-project-header {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.other-project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  align-items: stretch;
+}
+
+.other-project-panel {
+  min-height: 13rem;
+}
+
+.other-project-panel p:last-child {
+  margin-bottom: 0;
+}
+.other-project-subgrid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 0.85rem;
+  align-self: stretch;
+}
+
+.other-project-subgrid--bare {
+  margin-top: 0;
+}
+
+.other-project-subpanel {
+  padding: 1.35rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.other-project-subpanel p {
+  margin: 0.65rem 0 0;
+  color: var(--muted);
+}
+.other-project-panel h4,
+.other-project-subpanel h4 {
+  margin: 1rem 0 0;
+  color: var(--navy);
+  font-family: inherit;
+  font-size: 0.82rem;
+  line-height: 1.4;
+  letter-spacing: 0.08em;
+}
+
+.blank-field {
+  min-height: 6rem;
+  margin-top: 0.9rem;
+  border: 1px dashed var(--border);
+  border-radius: var(--radius);
+  background: linear-gradient(180deg, #ffffff 0%, #f6f9fe 100%);
+}
+
 .site-footer {
   padding: 1rem 0 2rem;
 }
@@ -747,7 +819,8 @@ h3 {
   .project-grid,
   .about-grid,
   .project-dashboard-top,
-  .project-impact-grid {
+  .project-impact-grid,
+  .other-project-grid {
     grid-template-columns: 1fr;
   }
 
@@ -832,3 +905,11 @@ h3 {
     width: min(100%, 26rem);
   }
 }
+
+
+
+
+
+
+
+
