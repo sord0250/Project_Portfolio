@@ -334,11 +334,12 @@ h3 {
 }
 
 .hero-copy {
-  max-width: 36ch;
+  max-width: none;
   font-size: clamp(1.18rem, 2vw, 1.36rem);
   line-height: 1.35;
   margin: 0.75rem 0 0;
   color: var(--light-blue);
+  white-space: nowrap;
 }
 
 .section-copy {
@@ -406,6 +407,11 @@ h3 {
   padding: 1.35rem;
 }
 
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
 .hero-portrait {
   position: relative;
   background: transparent;
@@ -446,7 +452,9 @@ h3 {
 
 .card .card-link {
   display: inline-flex;
-  margin-top: 1rem;
+  align-self: flex-start;
+  margin-top: auto;
+  padding-top: 1rem;
   color: var(--light-blue);
   font-weight: 700;
 }
@@ -760,6 +768,14 @@ h3 {
 }
 
 
+.project-summary iframe {
+  display: block;
+  width: min(100%, 560px);
+  aspect-ratio: 16 / 9;
+  height: auto;
+  margin: 1rem auto 0;
+}
+
 .other-projects-list {
   display: grid;
   gap: var(--space-4);
@@ -919,6 +935,10 @@ h3 {
 
   .hero {
     padding-top: var(--space-3);
+  }
+
+  .hero-copy {
+    white-space: normal;
   }
 
   h1 {
